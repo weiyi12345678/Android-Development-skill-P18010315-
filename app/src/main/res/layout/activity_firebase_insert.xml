@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".firebase_insert">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/background_white"
+                android:layout_marginTop="20dp"/>
+
+
+            <Button
+                android:id="@+id/button_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose"
+                android:layout_toLeftOf="@+id/imageView"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/black_background"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_margin="5dp"
+                android:hint="Game name" />
+
+            <EditText
+                android:id="@+id/edit_Description"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_name"
+                android:lines="8"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Game Detail"
+                android:inputType="textMultiLine" />
+
+
+            <EditText
+                android:id="@+id/edit_date"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/edit_Description"
+                android:ems="10"
+                android:hint="Enter Date for game publish"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/edit_Company"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Company Name"
+                android:layout_below="@+id/edit_date"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textView_typeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:layout_below="@+id/edit_Company"
+                android:text="Type of game :" />
+
+            <CheckBox
+                android:id="@+id/c_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_typeTitle"
+                android:text="Action " />
+
+            <CheckBox
+                android:id="@+id/c_action_ad"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_action"
+                android:text="Action-adventure" />
+
+            <CheckBox
+                android:id="@+id/c_adventure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_action_ad"
+                android:text="Adventure" />
+
+            <CheckBox
+                android:id="@+id/c_role_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_adventure"
+                android:text="Role-playing" />
+
+            <CheckBox
+                android:id="@+id/c_simulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_role_play"
+                android:text="Simulation" />
+
+            <CheckBox
+                android:id="@+id/c_strategy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_simulation"
+                android:text="Strategy" />
+
+            <CheckBox
+                android:id="@+id/c_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_strategy"
+                android:text="Sports" />
+
+            <CheckBox
+                android:id="@+id/c_puzzle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_sport"
+                android:text="Puzzle" />
+
+            <CheckBox
+                android:id="@+id/c_idle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_puzzle"
+                android:text="Idle" />
+
+            <TextView
+                android:id="@+id/textView_typePlatformTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:layout_below="@+id/c_idle"
+                android:text="Available at which platform:" />
+
+            <CheckBox
+                android:id="@+id/c_pPlaystation5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_typePlatformTitle"
+                android:text="PlayStation 5" />
+
+            <CheckBox
+                android:id="@+id/c_pPlaystation4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_pPlaystation5"
+                android:text="PlayStation 4" />
+
+            <CheckBox
+                android:id="@+id/c_pNintendoSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_pPlaystation4"
+                android:text="Nintendo Switch" />
+
+            <CheckBox
+                android:id="@+id/c_pNintendo3DS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_pNintendoSwitch"
+                android:text="Nintendo 3DS" />
+
+            <CheckBox
+                android:id="@+id/c_pXbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_pNintendo3DS"
+                android:text="Xbox" />
+
+            <CheckBox
+                android:id="@+id/c_pPC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_pXbox"
+                android:text="PC" />
+
+            <CheckBox
+                android:id="@+id/c_pIOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_pPC"
+                android:text="IOS" />
+
+            <CheckBox
+                android:id="@+id/c_pAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_pIOS"
+                android:text="Android" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_below="@+id/c_pAndroid"
+                android:layout_marginBottom="6dp"/>
+
+            <Button
+                android:id="@+id/button_insertToDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:layout_toRightOf="@+id/c_pAndroid"
+                android:background="@drawable/black_background"
+                android:textColor="@android:color/white"
+                android:layout_margin="6dp"
+                android:text="INSERT" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_toRightOf="@+id/button_insertToDB"
+                android:layout_below="@+id/progressBar"
+                android:layout_margin="6dp"
+                android:background="@drawable/black_background"
+                android:textColor="@android:color/white"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

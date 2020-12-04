@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:text="Game Intro App"
+        android:textSize="38dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:text="Wish you have a good experience" />
+
+    <Button
+        android:id="@+id/button_insert"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:background="@drawable/black_background"
+        android:textColor="@android:color/white"
+        android:text="Insert Game Info"
+        android:textAllCaps="false"/>
+
+
+
+    <Button
+        android:id="@+id/button_edit_delete"
+        android:layout_width="260dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_insert"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp"
+        android:background="@drawable/black_background"
+        android:textColor="@android:color/white"
+        android:text="Edit/Delete Game Info"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

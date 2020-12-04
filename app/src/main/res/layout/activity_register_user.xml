@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterUser">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:text="Game Intro App"
+        android:textSize="38dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:text="Register a new account" />
+
+    <EditText
+        android:id="@+id/edit_fullName"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_welcome"
+        android:hint="Full Name" />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:textSize="24dp"
+        android:layout_below="@+id/edit_fullName"
+        android:hint="Email Address" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_below="@+id/edit_email"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:textSize="24dp"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/edit_RPassword"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#0ED6B9"
+        android:text="Register User"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_RPassword"/>
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#7291D6"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_register"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:text="Game Intro App"
+        android:textSize="38dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:text="Wish you have a good experience" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_welcome"
+        android:hint="Email Address" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:layout_below="@+id/edit_email"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:textSize="24dp"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/button_signIn"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0ED6B9"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_password"/>
+
+    <TextView
+        android:id="@+id/text_forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_signIn"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Forget password? " />
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_signIn"
+        android:layout_toRightOf="@+id/text_forgetPassword"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Register" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
