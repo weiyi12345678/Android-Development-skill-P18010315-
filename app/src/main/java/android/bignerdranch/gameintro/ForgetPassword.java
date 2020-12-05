@@ -31,6 +31,9 @@ public class ForgetPassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
 
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //show back button
+
         email = (EditText) findViewById(R.id.edit_email);
         btn_reset = (Button) findViewById(R.id.button_reset);
         mProgressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -79,5 +82,11 @@ public class ForgetPassword extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
