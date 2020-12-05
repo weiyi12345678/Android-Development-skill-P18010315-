@@ -186,7 +186,7 @@
                 android:text="Nintendo 3DS" />
 
             <CheckBox
-                android:id="@+id/c_pXboxx"
+                android:id="@+id/c_pXbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/c_pNintendo3DS"
@@ -196,7 +196,7 @@
                 android:id="@+id/c_pPC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/c_pXboxx"
+                android:layout_below="@+id/c_pXbox"
                 android:text="PC" />
 
             <CheckBox
