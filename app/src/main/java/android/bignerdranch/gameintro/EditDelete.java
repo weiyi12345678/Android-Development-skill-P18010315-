@@ -33,14 +33,11 @@ public class EditDelete extends AppCompatActivity implements GameInfoEditDeleteA
     private RecyclerView mRecyclerView;
     private GameInfoEditDeleteAdapter mAdapter;
     private ProgressBar mProgressBar;
-
     private SwipeRefreshLayout swipeRefreshLayout;
-
-    private FirebaseStorage mStorage;
     private DatabaseReference mDatabaseReference, commentRef, likeRef;
     private ValueEventListener mDBListener;
-
     private List<Insert> mInserts = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

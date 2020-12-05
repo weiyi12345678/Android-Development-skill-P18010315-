@@ -33,46 +33,6 @@
                     android:layout_marginTop="12dp" />
 
 
-                <androidx.gridlayout.widget.GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="6dp"
-                    android:paddingBottom="6dp"
-                    android:layout_margin="10dp"
-                    app:columnCount="2"
-                    app:rowCount="2"
-                    android:background="@drawable/black_background">
-
-
-                    <EditText
-                        android:id="@+id/edit_search_game"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/black_background"
-                        android:ems="10"
-                        android:hint="Search with game name"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@android:color/white"
-                        android:inputType="text"
-                        android:padding="6dp"
-                        app:layout_column="0"
-                        app:layout_columnWeight="1"
-                        app:layout_row="0" />
-
-                    <Button
-                        android:id="@+id/button_search"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/black_background"
-                        android:paddingRight="20dp"
-                        android:drawableRight="@drawable/ic_search"
-                        app:layout_column="1"
-                        app:layout_row="0"
-                        android:text="Button" />
-
-
-                </androidx.gridlayout.widget.GridLayout>
-
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewGameInfoEditDelete"
                     android:scrollbars="vertical"
